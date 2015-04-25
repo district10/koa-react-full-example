@@ -1,3 +1,8 @@
+[Notes of Gnat](note.md)
+========================
+
+---
+
 # koa-react-full-example
 
 [![Join the chat at https://gitter.im/dozoisch/koa-react-full-example](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/dozoisch/koa-react-full-example?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
