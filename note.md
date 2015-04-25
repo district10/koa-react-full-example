@@ -1,8 +1,8 @@
 ### NOTES
 
-* [src/models/README.md](src/models/README.md)
-
-
+* [server.js](server.md)
+* [src/models](src/models/README.md)
+* [config](config/README.md)
 
 ### Tree
 
