@@ -21,7 +21,7 @@ var specific = {
       name: "Koa React Gulp Mongoose Mocha",
     },
     mongo: {
-      url: "mongodb://localhost/koareactfullexample",      // mongodb scheme, need no part number
+      url: "mongodb://localhost/koareactfullexample",      // mongodb scheme, need no port number
     },
   },
 };
