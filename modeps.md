@@ -23,7 +23,7 @@
     * mongoose
     * passport-local
     * react
-    * [react-bootstrap](#reactbootstrap)
+    * [react-bootstrap](#react-bootstrap)
     * react-router
     * react-router-bootstrap
     * superagent
