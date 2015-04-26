@@ -4,6 +4,7 @@
 
 * [auth.js](#authjs)
 * [count.js](#countjs)
+* [index.js](#indexjs)
 
 ---
 
@@ -93,4 +94,29 @@ exports.increment = function *() {
 };
 
 exports.decrement = function *() {...};
+```
+
+
+### [index.js](index.js)
+
+```js
+var stats = require("../../build/stats.json");   // this is a big file (2.2MB), dont know what for.
+
+var publicPath = stats.publicPath;
+
+var STYLE_URL;
+var SCRIPT_URL_APP = publicPath + [].concat(stats.assetsByChunkName.app)[0];
+if (process.env.NODE_ENV === "production") {
+  STYLE_URL = (publicPath + [].concat(stats.assetsByChunkName.app)[1] +"?" + stats.hash);
+  SCRIPT_URL_APP += "?" + stats.hash;
+}
+
+exports.index = function *() {
+  this.body = yield this.render("basic", {
+    version: stats.appVersion,
+    commit: stats.appCommit,
+    STYLE_URL: STYLE_URL,
+    SCRIPT_URL: SCRIPT_URL_APP,
+  });
+};
 ```

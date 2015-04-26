@@ -2,33 +2,12 @@
 
 ### TOC
 
+* [koa.js](#koajs)                     <=== config, passport
 * [config.js](#configjs)
-* [koa.js](#koajs)
-* [router.js](routerjs)
 * [passport.js](passportjs)
+* [router.js](routerjs)
 
 ---
-
-### [config.js](config.js)
-
-```js
-var specific = {
-  development: {...},
-  test: {...},
-  production: {
-    app: {
-      port: process.env.PORT || 3000,
-      name: "Koa React Gulp Mongoose Mocha",
-    },
-    mongo: {
-      url: "mongodb://localhost/koareactfullexample",      // mongodb scheme, need no port number
-    },
-  },
-};
-
-module.exports = _.merge(base, specific[env]);
-```
-
 
 ### [koa.js](koa.js)
 
@@ -80,6 +59,28 @@ module.exports = function (app, config, passport) {
   app.use(responseTime());
 };
 ```
+
+
+### [config.js](config.js)
+
+```js
+var specific = {
+  development: {...},
+  test: {...},
+  production: {
+    app: {
+      port: process.env.PORT || 3000,
+      name: "Koa React Gulp Mongoose Mocha",
+    },
+    mongo: {
+      url: "mongodb://localhost/koareactfullexample",      // mongodb scheme, need no port number
+    },
+  },                                                       // always use `,', instead of  'nothing'
+};
+
+module.exports = _.merge(base, specific[env]);
+```
+
 
 ### [passport.js](passport.js)
 

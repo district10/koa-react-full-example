@@ -7,6 +7,12 @@
 > and retreived from our database. 
 > All document **creation** and **retreival** from the database is **handled by these models**.
 
+Models: (a model <==> a collection)
+
+* User
+* Count
+* TODO: site, building
+
 Steps:
 
 * compiling a model: `mongoose.model()`
@@ -14,6 +20,7 @@ Steps:
 * querying: `model.find({query-key-val})`
 * removing
 * updating
+
 
 ```js
 // schema

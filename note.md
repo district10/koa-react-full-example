@@ -2,7 +2,7 @@
 
 * [server.js](server.md)
 * [src/models](src/models/README.md)
-* [config](config/README.md)
+* [config/](config/README.md)
 
 ### Tree
 
@@ -40,9 +40,9 @@ koa-react-full-example
 │   └── stats.json
 ├── config
 │   ├── config.js
-│   ├── koa.js
+│   ├── koa.js                                   // koa        <== config, passport   
 │   ├── passport.js
-│   └── routes.js
+│   └── routes.js                                // routes     <== controllers
 ├── HISTORY.md
 ├── lib
 │   ├── authenticator.js
