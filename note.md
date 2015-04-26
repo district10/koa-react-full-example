@@ -1,9 +1,14 @@
+### [Modules & Deps](modeps.md)
+
+
+
 ### NOTES
 
 * [server.js](server.md)
 * [src/models/](src/models/README.md)
 * [config/](config/README.md)
 * [app/](app/README.md)
+
 
 ### Tree
 
@@ -91,4 +96,14 @@ require("babel/register")({
   ignore: /node_modules/,
   optional: ["es7.objectRestSpread", "runtime"]
 });
+```
+
+### [webpack.config.js](webpack.config.js)
+
+```js
+/* eslint no-var: 0 */
+require("./register-babel");
+var config = require("./webpack/webpack.config");
+var result = config();
+module.exports = result;
 ```
