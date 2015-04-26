@@ -3,6 +3,7 @@
 ## TOC
 
 * modules
+    * [Webpack](#webpack)
 * deps
     * bcrypt
     * bootstrap
@@ -22,7 +23,7 @@
     * mongoose
     * passport-local
     * react
-    * react-bootstrap
+    * [react-bootstrap](#reactbootstrap)
     * react-router
     * react-router-bootstrap
     * superagent
@@ -55,3 +56,11 @@
     * webpack
     * webpack-dev-server
     * yargs
+
+---
+
+### [Webpack](http://webpack.github.io/docs/what-is-webpack.html)
+
+![modules with dependencies ---webpack---> static assets](http://webpack.github.io/assets/what-is-webpack.png)
+
+### [React Bootstrap](http://react-bootstrap.github.io/)

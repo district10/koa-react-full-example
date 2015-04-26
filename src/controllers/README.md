@@ -102,9 +102,9 @@ exports.decrement = function *() {...};
 ```js
 var stats = require("../../build/stats.json");   // this is a big file (2.2MB), dont know what for.
 
-var publicPath = stats.publicPath;
+var publicPath = stats.publicPath;               // all info here   
 
-var STYLE_URL;
+var STYLE_URL;                                   // get the script, css, etc
 var SCRIPT_URL_APP = publicPath + [].concat(stats.assetsByChunkName.app)[0];
 if (process.env.NODE_ENV === "production") {
   STYLE_URL = (publicPath + [].concat(stats.assetsByChunkName.app)[1] +"?" + stats.hash);
