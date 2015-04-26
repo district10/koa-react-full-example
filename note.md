@@ -1,8 +1,9 @@
 ### NOTES
 
 * [server.js](server.md)
-* [src/models](src/models/README.md)
+* [src/models/](src/models/README.md)
 * [config/](config/README.md)
+* [app/](app/README.md)
 
 ### Tree
 
@@ -61,7 +62,7 @@ koa-react-full-example
 │   │   ├── count.js
 │   │   └── user.js
 │   └── views
-│       └── basic.html
+│       └── basic.html                           // the basic html file, TITLE goes here
 ├── test
 │   ├── middlewares
 │   │   ├── authenticator.js
@@ -80,4 +81,14 @@ koa-react-full-example
 │   │   └── version.js
 │   └── webpack.config.js
 └── webpack.config.js
+```
+
+
+### [register-babel.js](register-babel.js)
+
+```js
+require("babel/register")({
+  ignore: /node_modules/,
+  optional: ["es7.objectRestSpread", "runtime"]
+});
 ```
