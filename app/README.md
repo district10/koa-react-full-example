@@ -44,7 +44,13 @@ import Router, { Route, DefaultRoute, NotFoundRoute, Redirect } from "react-rout
 
 // components
 import Navbar from "./components/navbar";
-import { Authenticated as Layout, Anonymous as AnonymousLayout } from "./layouts";
+import { Authenticated as Layout, Anonymous as AnonymousLayout } from "./layouts"; /*
+                                                                                        // layouts/index.jsx
+                                                                                        export {
+                                                                                          Anonymous,
+                                                                                          Authenticated,
+                                                                                        };
+                                                                                    */
 
 import Application from "./application";
 
