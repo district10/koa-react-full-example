@@ -6,7 +6,7 @@ koa-react-full-example/app
 ├── application
 │   └── index.jsx
 ├── components
-│   ├── counter.jsx
+│   ├── counter.jsx                              // react elements go here
 │   └── navbar.jsx
 ├── composition
 │   └── full-height.jsx

@@ -5,7 +5,10 @@
 ### NOTES
 
 * [server.js](server.md)
-* [src/models/](src/models/README.md)
+* src: MVC
+    * M: [models/](src/models/README.md): users, count, buildings, etc
+    * V: views, basic.html(`#content`)
+    * C: 
 * [config/](config/README.md)
 * [app/](app/README.md)
 
@@ -15,14 +18,14 @@
 ```text
 koa-react-full-example
 ├── app
-│   ├── app.jsx
+│   ├── app.jsx                                  // router, <=== application   
 │   ├── application
-│   │   └── index.jsx
+│   │   └── index.jsx                            // fullheightApp <=== ../composition/fullheight.jsx
 │   ├── components
 │   │   ├── counter.jsx
 │   │   └── navbar.jsx
 │   ├── composition
-│   │   └── full-height.jsx
+│   │   └── full-height.jsx                      // export makeFullHeightComponent
 │   ├── layouts
 │   │   ├── anonymous.jsx
 │   │   ├── authenticated.jsx
